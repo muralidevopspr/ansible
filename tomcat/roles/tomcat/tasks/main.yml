@@ -1,9 +1,4 @@
----
-- name: Install Java and Tomcat
-  hosts: all  # This is at the playbook level
-  become: true
-  tasks:
-    - name: Install Java 1.7
-      yum:
-        name: java-1.7.0-openjdk
-        state: present
+- name: Install Java 1.7
+  yum:
+    name: java-1.7.0-openjdk
+    state: present
