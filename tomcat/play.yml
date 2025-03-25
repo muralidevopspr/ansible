@@ -6,8 +6,3 @@
 
   roles:
     - tomcat
-
-  tasks:
-    - name: Installing the tomcat into manage nodes
-      debug:
-        msg: "Tomcat installed successfully"
