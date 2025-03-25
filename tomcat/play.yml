@@ -1,0 +1,13 @@
+---
+- hosts: tomcat-servers
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  roles:
+    - tomcat
+
+  tasks:
+    - name: Installing the tomcat into manage nodes
+      debug:
+        msg: "Tomcat installed successfully"
