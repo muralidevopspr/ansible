@@ -1,7 +1,7 @@
 ---
 - name: Install Java and Tomcat
-  hosts: all
-  become: true  # Ensure you have root privileges for the required tasks
+  hosts: all  # This is defined at the playbook level, not at the task level
+  become: true
   tasks:
     - name: Install Java 1.7
       yum:
