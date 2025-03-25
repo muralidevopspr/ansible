@@ -1,3 +1,4 @@
 [tomcat-servers]
-54.167.17.52 ansible_ssh_user=ec2-user
-54.235.45.220 ansible_ssh_user=ec2-user
+54.167.17.52 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/path/to/practice.pem
+54.235.45.220 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/path/to/practice.pem
+
